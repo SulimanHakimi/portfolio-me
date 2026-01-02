@@ -1,158 +1,133 @@
 "use client";
-import { useState } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
-import { Send, Loader2, CheckCircle, AlertCircle } from "lucide-react";
+import MagneticButton from "./ui/MagneticButton";
 
 export default function ContactForm() {
     const { language } = useLanguage();
-    const [status, setStatus] = useState("idle"); // idle, loading, success, error
     const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+    const [status, setStatus] = useState("idle");
 
     const content = {
         en: {
-            title: "Get in Touch",
-            subtitle: "Have a project in mind? Let's build something amazing together.",
-            name: "Your Name",
-            email: "Your Email",
-            message: "Your Message",
-            send: "Send Message",
-            sending: "Sending...",
-            success: "Message sent successfully!",
-            error: "Something went wrong. Please try again."
+            title: "Let's Talk",
+            description: "Have a project in mind? Let's create something functional and beautiful together",
+            placeholderName: "Your Name",
+            placeholderEmail: "Your Email",
+            placeholderMsg: "Tell me about your project...",
+            send: "Send Request",
+            success: "Received",
+            error: "Error sending message. Please try again."
         },
         fa: {
-            title: "تماس با من",
-            subtitle: "پروژه‌ای در ذهن دارید؟ بیایید چیزی شگفت‌انگیز بسازیم.",
-            name: "نام شما",
-            email: "ایمیل شما",
-            message: "پیام شما",
-            send: "ارسال پیام",
-            sending: "در حال ارسال...",
-            success: "پیام با موفقیت ارسال شد!",
-            error: "مشکلی پیش آمد. لطفا دوباره تلاش کنید."
+            title: "گفتگو کنیم",
+            description: "پروژه‌ای در ذهن دارید؟ بیایید چیزی کاربردی و زیبا با هم بسازیم",
+            placeholderName: "نام شما",
+            placeholderEmail: "ایمیل شما",
+            placeholderMsg: "درباره پروژه خود بگویید...",
+            send: "الرسال درخواست",
+            success: "دریافت شد",
+            error: "خطا در ارسال پیام. لطفاً دوباره تلاش کنید"
         }
     };
 
     const text = content[language];
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         setStatus("loading");
 
         try {
-            const res = await fetch("/api/contact", {
+            const response = await fetch("/api/contact", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
             });
 
-            if (res.ok) {
+            if (response.ok) {
                 setStatus("success");
                 setFormData({ name: "", email: "", message: "" });
             } else {
                 setStatus("error");
             }
-        } catch (err) {
+        } catch (error) {
+            console.error("Error:", error);
             setStatus("error");
         }
     };
 
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
     return (
-        <section id="contact" className="py-24 px-6 bg-[var(--color-surface)] relative transition-colors">
-            <div className="max-w-4xl mx-auto">
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6 }}
-                    className="text-center mb-12"
-                >
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">{text.title}</h2>
-                    <p className="text-gray-400 text-lg">{text.subtitle}</p>
-                </motion.div>
+        <section id="contact" className="bg-[#EB5939] py-32 px-4 md:px-8 text-white">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-7xl mx-auto">
+                <div>
+                    <motion.h2
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="text-[12vw] md:text-[8vw] font-black leading-none tracking-tighter mb-12"
+                    >
+                        {text.title}
+                    </motion.h2>
+                    <p className="text-xl md:text-2xl font-mono opacity-80 max-w-md">
+                        {text.description}
+                    </p>
+                </div>
 
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.2 }}
-                    className="bg-[#0F172A] p-8 md:p-10 rounded-3xl border border-white/5 shadow-2xl"
-                >
-                    <form onSubmit={handleSubmit} className="space-y-6">
-                        <div className="grid md:grid-cols-2 gap-6">
-                            <div className="space-y-2">
-                                <label className="text-sm font-medium text-gray-300">{text.name}</label>
-                                <input
-                                    type="text"
-                                    name="name"
-                                    required
-                                    value={formData.name}
-                                    onChange={handleChange}
-                                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-[var(--color-primary)] focus:ring-1 focus:ring-[var(--color-primary)] outline-none transition-all"
-                                />
-                            </div>
-                            <div className="space-y-2">
-                                <label className="text-sm font-medium text-gray-300">{text.email}</label>
-                                <input
-                                    type="email"
-                                    name="email"
-                                    required
-                                    value={formData.email}
-                                    onChange={handleChange}
-                                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-[var(--color-primary)] focus:ring-1 focus:ring-[var(--color-primary)] outline-none transition-all"
-                                />
-                            </div>
-                        </div>
+                <form onSubmit={handleSubmit} className="space-y-0 border-t border-white/20">
+                    <div className="group">
+                        <input
+                            type="text"
+                            name="name"
+                            value={formData.name}
+                            onChange={handleChange}
+                            placeholder={text.placeholderName}
+                            required
+                            className="w-full bg-transparent border-b border-white/20 py-8 text-3xl md:text-4xl placeholder:text-white/40 outline-none focus:border-white transition-colors"
+                        />
+                    </div>
+                    <div className="group">
+                        <input
+                            type="email"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleChange}
+                            placeholder={text.placeholderEmail}
+                            required
+                            className="w-full bg-transparent border-b border-white/20 py-8 text-3xl md:text-4xl placeholder:text-white/40 outline-none focus:border-white transition-colors"
+                        />
+                    </div>
+                    <div className="group">
+                        <textarea
+                            name="message"
+                            value={formData.message}
+                            onChange={handleChange}
+                            rows="2"
+                            placeholder={text.placeholderMsg}
+                            required
+                            className="w-full bg-transparent border-b border-white/20 py-8 text-3xl md:text-4xl placeholder:text-white/40 outline-none focus:border-white transition-colors resize-none"
+                        ></textarea>
+                    </div>
 
-                        <div className="space-y-2">
-                            <label className="text-sm font-medium text-gray-300">{text.message}</label>
-                            <textarea
-                                name="message"
-                                rows="5"
-                                required
-                                value={formData.message}
-                                onChange={handleChange}
-                                className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-[var(--color-primary)] focus:ring-1 focus:ring-[var(--color-primary)] outline-none transition-all resize-none"
-                            ></textarea>
-                        </div>
-
-                        <div className="pt-2">
-                            <button
-                                type="submit"
-                                disabled={status === "loading" || status === "success"}
-                                className="w-full bg-[var(--color-primary)] text-black font-bold py-4 rounded-xl hover:opacity-90 transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
-                            >
-                                {status === "loading" ? (
-                                    <>
-                                        <Loader2 className="animate-spin w-5 h-5" />
-                                        {text.sending}
-                                    </>
-                                ) : status === "success" ? (
-                                    <>
-                                        <CheckCircle className="w-5 h-5" />
-                                        {text.success}
-                                    </>
-                                ) : (
-                                    <>
-                                        <Send className="w-5 h-5" />
-                                        {text.send}
-                                    </>
-                                )}
-                            </button>
-                            {status === "error" && (
-                                <p className="mt-4 text-red-400 text-sm flex items-center justify-center gap-2">
-                                    <AlertCircle className="w-4 h-4" />
-                                    {text.error}
-                                </p>
-                            )}
-                        </div>
-                    </form>
-                </motion.div>
+                    <div className="pt-12">
+                        <button
+                            type="submit"
+                            disabled={status === "loading" || status === "success"}
+                            className="w-full py-6 bg-white text-[#EB5939] font-bold text-xl uppercase tracking-widest hover:bg-black hover:text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                        >
+                            {status === "loading" ? (language === 'fa' ? "در حال ارسال..." : "Sending...") : status === "success" ? text.success : text.send}
+                        </button>
+                    </div>
+                    {status === "error" && (
+                        <p className="text-black bg-white inline-block px-4 py-2 mt-4 font-bold">
+                            {text.error}
+                        </p>
+                    )}
+                </form>
             </div>
         </section>
     );

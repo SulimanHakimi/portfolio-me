@@ -15,14 +15,14 @@ export async function POST(req) {
             port: parseInt(process.env.SMTP_PORT || '587'),
             secure: process.env.SMTP_SECURE === 'true',
             auth: {
-                user: process.env.SMTP_USER,
-                pass: process.env.SMTP_PASS,
+                user: process.env.EMAIL_USER,
+                pass: process.env.EMAIL_PASS,
             },
         });
 
         const mailOptions = {
-            from: process.env.SMTP_FROM || process.env.SMTP_USER,
-            to: process.env.SMTP_TO || process.env.SMTP_USER, // Send to self
+            from: process.env.EMAIL_USER,
+            to: "afgsuliman50@gmail.com", // Send to self
             replyTo: email,
             subject: `Portfolio Inquiry from ${name}`,
             text: `Name: ${name}\nEmail: ${email}\nMessage: \n${message}`,
@@ -39,11 +39,10 @@ export async function POST(req) {
         };
 
         // Only attempt to send if Creds are present, else Mock success for Demo
-        if (process.env.SMTP_USER && process.env.SMTP_PASS) {
+        if (process.env.EMAIL_USER && process.env.EMAIL_PASS) {
             await transporter.sendMail(mailOptions);
         } else {
             console.log("Mock Email Sent:", mailOptions);
-            // Simulate delay
             await new Promise(resolve => setTimeout(resolve, 1000));
         }
 
