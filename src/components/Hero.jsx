@@ -84,7 +84,7 @@ export default function Hero() {
 
             {/* Bottom Info */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 py-8 border-t border-black/10 text-sm font-bold uppercase tracking-widest">
-                <div>(2025)</div>
+                <div>(2026)</div>
                 <div>Frontend • Backend</div>
                 <div className="hidden md:block">UI/UX • Design</div>
                 <div className="text-right flex justify-end gap-2 items-center group cursor-pointer">
