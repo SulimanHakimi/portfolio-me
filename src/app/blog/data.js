@@ -98,5 +98,69 @@ export const blogs = [
 
             <p>Celebrate your hard work with a cap that honors the tradition and your personal style.</p>
         `
+    },
+    {
+        id: 3,
+        slug: "discover-authentic-sushi-joy",
+        title: "Discover Authentic Sushi at Your Local Supermarket with Sushi Joy",
+        image: "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=2070&auto=format&fit=crop",
+        description: "Craving fresh sushi? Find out where you can pick up delicious, hand-made sushi from Sushi Joy at a supermarket near you.",
+        date: "2026-02-13",
+        author: "Suliman Hakimi",
+        category: "Food & Lifestyle",
+        keywords: ["Sushi Joy", "sushi", "supermarket sushi", "fresh food", "Germany", "Oelde", "Erwitte", "Paderborn", "Ahlen", "Sendenhorst", "Sassenberg"],
+        readingTime: "2 min read",
+        content: `
+            <p class="mb-4">Sushi Joy brings the authentic taste of Japan directly to your local supermarket. Forget the hassle of restaurant reservations – now you can enjoy premium quality sushi on the go!</p>
+            
+            <h3 class="text-xl font-bold text-black uppercase mb-4">Freshness You Can Taste</h3>
+            <p class="mb-4">Sushi Joy offers a wide range of fresh, delicious sushi boxes prepared daily. Whether you're looking for a quick lunch or a dinner treat, their selection has something for everyone. From classic Maki and Nigiri to innovative rolls, quality is always the priority.</p>
+            
+            <h3 class="text-xl font-bold text-black uppercase mb-4">Find Sushi Joy Near You</h3>
+            <p class="mb-4">You can find our delicious sushi at the following supermarket locations:</p>
+            
+            <ul class="list-disc pl-5 space-y-2 mb-8">
+                <li><strong>Oelde:</strong> Warendorferstr. 16, 59302 Oelde</li>
+                <li><strong>Erwitte:</strong> Wemberweg 4, 59597 Erwitte</li>
+                <li><strong>Paderborn:</strong> Alisostraße 2, 33106 Paderborn</li>
+                <li><strong>Ahlen:</strong> Gebrüder-kerkmann-Platz 4, 59227 Ahlen</li>
+                <li><strong>Sendenhorst:</strong> Osttor 26, 48234 Sendenhorst</li>
+                <li><strong>Sassenberg:</strong> Von Galen-Straße 21, 48336 Sassenberg</li>
+            </ul>
+
+            <p>Visit <a href="https://sushijoy.de" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-black underline decoration-accent/30 underline-offset-4 transition-colors font-bold">Sushi Joy</a> to learn more about our offerings and philosophy.</p>
+        `
+    },
+    {
+        id: 4,
+        slug: "entdecken-sie-authentisches-sushi-joy",
+        title: "Entdecken Sie authentisches Sushi in Ihrem Supermarkt mit Sushi Joy",
+        image: "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=2070&auto=format&fit=crop",
+        description: "Lust auf frisches Sushi? Erfahren Sie, wo Sie köstliches, handgemachtes Sushi von Sushi Joy in einem Supermarkt in Ihrer Nähe finden.",
+        date: "2026-02-13",
+        author: "Suliman Hakimi",
+        category: "Essen & Lifestyle",
+        keywords: ["Sushi Joy", "Sushi", "Supermarkt Sushi", "frisches Essen", "Deutschland", "Oelde", "Erwitte", "Paderborn", "Ahlen", "Sendenhorst", "Sassenberg"],
+        readingTime: "2 min Lesezeit",
+        content: `
+            <p class="mb-4">Sushi Joy bringt den authentischen Geschmack Japans direkt in Ihren lokalen Supermarkt. Vergessen Sie den Aufwand von Restaurantreservierungen – jetzt können Sie erstklassiges Sushi auch unterwegs genießen!</p>
+            
+            <h3 class="text-xl font-bold text-black uppercase mb-4">Frische, die man schmeckt</h3>
+            <p class="mb-4">Sushi Joy bietet eine große Auswahl an frischen, köstlichen Sushi-Boxen, die täglich zubereitet werden. Egal, ob Sie ein schnelles Mittagessen oder ein Abendessen suchen, die Auswahl bietet für jeden etwas. Von klassischen Maki und Nigiri bis hin zu innovativen Rollen steht Qualität immer an erster Stelle.</p>
+            
+            <h3 class="text-xl font-bold text-black uppercase mb-4">Finden Sie Sushi Joy in Ihrer Nähe</h3>
+            <p class="mb-4">Sie finden unser köstliches Sushi an folgenden Supermarkt-Standorten:</p>
+            
+            <ul class="list-disc pl-5 space-y-2 mb-8">
+                <li><strong>Oelde:</strong> Warendorferstr. 16, 59302 Oelde</li>
+                <li><strong>Erwitte:</strong> Wemberweg 4, 59597 Erwitte</li>
+                <li><strong>Paderborn:</strong> Alisostraße 2, 33106 Paderborn</li>
+                <li><strong>Ahlen:</strong> Gebrüder-kerkmann-Platz 4, 59227 Ahlen</li>
+                <li><strong>Sendenhorst:</strong> Osttor 26, 48234 Sendenhorst</li>
+                <li><strong>Sassenberg:</strong> Von Galen-Straße 21, 48336 Sassenberg</li>
+            </ul>
+
+            <p>Besuchen Sie <a href="https://sushijoy.de" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-black underline decoration-accent/30 underline-offset-4 transition-colors font-bold">Sushi Joy</a>, um mehr über unser Angebot und unsere Philosophie zu erfahren.</p>
+        `
     }
 ]
