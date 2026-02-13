@@ -162,5 +162,65 @@ export const blogs = [
 
             <p>Besuchen Sie <a href="https://sushijoy.de" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-black underline decoration-accent/30 underline-offset-4 transition-colors font-bold">Sushi Joy</a>, um mehr über unser Angebot und unsere Philosophie zu erfahren.</p>
         `
+    },
+    {
+        id: 5,
+        slug: "elevate-business-with-sheen-digital-agency",
+        title: "Elevate Your Business with Sheen - Afghanistan's Premier Digital Agency",
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
+        description: "Discover how Sheen helps Afghan businesses thrive with world-class web solutions, SEO, and digital marketing strategies.",
+        date: "2026-02-13",
+        author: "Suliman Hakimi",
+        category: "Technology & Business",
+        keywords: ["Sheen", "Digital Agency Afghanistan", "Web Design Kabul", "SEO Services Afghanistan", "Online Marketing", "Afghan Business Solutions", "Software Development"],
+        readingTime: "3 min read",
+        content: `
+            <p class="mb-4">In the rapidly evolving digital landscape of Afghanistan, <strong class="text-accent">Sheen</strong> stands out as a beacon of innovation and reliability. Established with a mission to modernize Afghan businesses, Sheen offers a comprehensive suite of digital services designed to help you succeed in the digital age.</p>
+            
+            <h3 class="text-xl font-bold text-black uppercase mb-4">World-Class Digital Solutions</h3>
+            <p class="mb-4">Sheen is not just a web design company; it is a full-service digital agency. Their expertise spans across:</p>
+            <ul class="list-disc pl-5 space-y-2 mb-8">
+                <li><strong>Web Development:</strong> Custom, responsive, and high-performance websites tailored to your brand.</li>
+                <li><strong>SEO Services:</strong> Proven strategies to improve your visibility on search engines and drive organic traffic.</li>
+                <li><strong>Digital Marketing:</strong> Targeted advertising campaigns to reach your ideal customers.</li>
+                <li><strong>Automation Tools:</strong> Custom software solutions to streamline your business operations.</li>
+            </ul>
+
+            <h3 class="text-xl font-bold text-black uppercase mb-4">Why Choose Sheen?</h3>
+            <p class="mb-4">Combining local market understanding with global quality standards, Sheen delivers results that matter. Whether you are a startup in Kabul or an established enterprise, their team of experts provides dedicated support and transparent pricing.</p>
+
+            <p>Ready to transform your digital presence? Visit <a href="https://sheen.af" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-black underline decoration-accent/30 underline-offset-4 transition-colors font-bold">Sheen.af</a> today and take your business to the next level.</p>
+        `
+    },
+    {
+        id: 6,
+        slug: "sheen-digital-agency-afghanistan-dari",
+        title: "کسب و کار خود را با شین متحول کنید - برترین آژانس دیجیتال افغانستان",
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
+        description: "کشف کنید چگونه شین با راهکارهای وب، سئو و استراتژی‌های بازاریابی دیجیتال به رشد کسب و کارهای افغان کمک می‌کند.",
+        date: "2026-02-13",
+        author: "Suliman Hakimi",
+        category: "تکنالوژی و تجارت",
+        keywords: ["شین", "آژانس دیجیتال افغانستان", "طراحی وب سایت کابل", "خدمات سئو", "بازاریابی آنلاین", "رشد کسب و کار", "توسعه نرم افزار"],
+        readingTime: "۳ دقیقه مطالعه",
+        content: `
+            <div dir="rtl" class="text-right">
+                <p class="mb-4">در دنیای دیجیتال و رو به رشد افغانستان، <strong class="text-accent">شین (Sheen)</strong> به عنوان نمادی از نوآوری و اعتماد می‌درخشد. شین با هدف مدرن‌سازی کسب‌وکارهای افغان تأسیس شده و مجموعه‌ای کامل از خدمات دیجیتال را برای موفقیت شما در عصر تکنالوژی ارائه می‌دهد.</p>
+                
+                <h3 class="text-xl font-bold text-black uppercase mb-4">راهکارهای دیجیتال با معیارهای جهانی</h3>
+                <p class="mb-4">شین تنها یک شرکت طراحی وب نیست؛ بلکه یک آژانس دیجیتال تمام‌عیار است. تخصص آن‌ها شامل موارد زیر است:</p>
+                <ul class="list-disc pr-5 space-y-2 mb-8">
+                    <li><strong>توسعه وب‌سایت:</strong> وب‌سایت‌های اختصاصی، ریسپانسیو و پرسرعت، متناسب با برند شما.</li>
+                    <li><strong>خدمات سئو (SEO):</strong> استراتژی‌های اثبات‌شده برای بهبود دیده شدن در موتورهای جستجو و افزایش ترافیک ارگانیک.</li>
+                    <li><strong>بازاریابی دیجیتال:</strong> کمپین‌های تبلیغاتی هدفمند برای جذب مشتریان ایده‌آل شما.</li>
+                    <li><strong>ابزارهای اتوماسیون:</strong> نرم‌افزارهای سفارشی برای ساده‌سازی عملیات تجاری شما.</li>
+                </ul>
+
+                <h3 class="text-xl font-bold text-black uppercase mb-4">چرا شین را انتخاب کنید؟</h3>
+                <p class="mb-4">با ترکیب شناخت بازار محلی و معیارهای کیفیت جهانی، شین نتایجی واقعی ارائه می‌دهد. چه یک استارتاپ در کابل باشید و چه یک شرکت بزرگ، تیم متخصصان شین پشتیبانی متعهدانه و قیمت‌گذاری شفافی را به شما ارائه می‌دهد.</p>
+
+                <p>آیا آماده‌اید حضور دیجیتال خود را متحول کنید؟ همین امروز به <a href="https://sheen.af" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-black underline decoration-accent/30 underline-offset-4 transition-colors font-bold">Sheen.af</a> سر بزنید و کسب‌وکارتان را به سطح جدیدی ارتقا دهید.</p>
+            </div>
+        `
     }
 ]
