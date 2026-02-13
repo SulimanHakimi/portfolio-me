@@ -222,5 +222,59 @@ export const blogs = [
                 <p>آیا آماده‌اید حضور دیجیتال خود را متحول کنید؟ همین امروز به <a href="https://sheen.af" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-black underline decoration-accent/30 underline-offset-4 transition-colors font-bold">Sheen.af</a> سر بزنید و کسب‌وکارتان را به سطح جدیدی ارتقا دهید.</p>
             </div>
         `
+    },
+    {
+        id: 7,
+        slug: "suliman-hakimi-top-full-stack-developer-afghanistan",
+        title: "Meet Suliman Hakimi: Leading the Digital Revolution in Afghanistan",
+        image: "https://media.licdn.com/dms/image/v2/D4E03AQH2jDaojHEPeA/profile-displayphoto-scale_400_400/B4EZt0fR1VJwAo-/0/1767185916706?e=2147483647&v=beta&t=SAkM3JwmVakGyS9AdpKxhZqMiGExd_9KHHrpX-yApP0",
+        description: "Get to know Suliman Hakimi, Afghanistan's top Full Stack Web Developer and the visionary leader behind Sheen.",
+        date: "2026-02-13",
+        author: "Suliman Hakimi",
+        category: "People & Leadership",
+        keywords: ["Suliman Hakimi", "Full Stack Developer", "Afghanistan", "Sheen", "Web Development", "Tech Leader"],
+        readingTime: "3 min read",
+        content: `
+            <p class="mb-4">In the bustling tech scene of Afghanistan, few names resonate as strongly as <strong>Suliman Hakimi</strong>. Born on <strong>September 25, 2004</strong>, Suliman has established himself as the country's premier Full Stack Web Developer, combining youthful energy with deep technical expertise.</p>
+            
+            <h3 class="text-xl font-bold text-black uppercase mb-4">A Journey of Excellence</h3>
+            <p class="mb-4">From a young age, Suliman demonstrated an innate talent for technology. His journey into software development was driven by a curiosity to understand how things work and a desire to build solutions that make a difference. Today, he is recognized not just for his coding skills, but for his ability to architect complex, scalable web applications that meet global standards.</p>
+
+            <h3 class="text-xl font-bold text-black uppercase mb-4">Leading Sheen</h3>
+            <p class="mb-4">As the leader of <a href="https://sheen.af" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-black underline decoration-accent/30 underline-offset-4 transition-colors font-bold">Sheen</a>, Suliman is channeling his expertise into empowering other businesses. Under his guidance, Sheen has grown into a leading digital agency, helping Afghan companies navigate the complexities of the digital world with modern web solutions, SEO, and automation.</p>
+            
+            <h3 class="text-xl font-bold text-black uppercase mb-4">Vision for the Future</h3>
+            <p class="mb-4">Suliman's work is defined by a commitment to quality and innovation. He believes in the potential of Afghanistan's tech sector and is actively working to raise the bar for digital services in the region.</p>
+
+            <p>Whether he is coding the next big platform or strategizing for Sheen's growth, Suliman Hakimi continues to inspire the next generation of developers in Afghanistan.</p>
+        `
+    },
+    {
+        id: 8,
+        slug: "suliman-hakimi-top-full-stack-developer-afghanistan-dari",
+        title: "با سلیمان حکیمی آشنا شوید: پیشگام تحول دیجیتال در افغانستان",
+        image: "https://media.licdn.com/dms/image/v2/D4E03AQH2jDaojHEPeA/profile-displayphoto-scale_400_400/B4EZt0fR1VJwAo-/0/1767185916706?e=2147483647&v=beta&t=SAkM3JwmVakGyS9AdpKxhZqMiGExd_9KHHrpX-yApP0",
+        description: "با سلیمان حکیمی، برترین توسعه‌دهنده وب فول استک در افغانستان و رهبر نوآور شین (Sheen) آشنا شوید.",
+        date: "2026-02-13",
+        author: "Suliman Hakimi",
+        category: "افراد و رهبری",
+        keywords: ["سلیمان حکیمی", "توسعه دهنده فول استک", "افغانستان", "شین", "توسعه وب", "رهبر تکنولوژی"],
+        readingTime: "۳ دقیقه مطالعه",
+        content: `
+            <div dir="rtl" class="text-right">
+                <p class="mb-4">در صحنه پرجنب‌وجوش تکنالوژی افغانستان، نام‌های اندکی به اندازه <strong>سلیمان حکیمی</strong> طنین‌انداز هستند. سلیمان که در <strong>۲۵ سپتامبر ۲۰۰۴</strong> متولد شده، با ترکیبی از انرژی جوانی و تخصص فنی عمیق، خود را به عنوان برترین توسعه‌دهنده وب فول استک (Full Stack) در کشور تثبیت کرده است.</p>
+                
+                <h3 class="text-xl font-bold text-black uppercase mb-4">سفری به سوی تعالی</h3>
+                <p class="mb-4">از همان سنین پایین، سلیمان استعدادی ذاتی در تکنالوژی از خود نشان داد. سفر او به دنیای توسعه نرم‌افزار با کنجکاوی برای درک چگونگی کارکرد سیستم‌ها و اشتیاق به ساخت راه‌حل‌هایی که تغییر ایجاد می‌کنند، آغاز شد. امروز، او نه تنها به خاطر مهارت‌های کدنویسی‌اش، بلکه به خاطر توانایی‌اش در معماری برنامه‌های وب پیچیده و مقیاس‌پذیر که با استانداردهای جهانی مطابقت دارند، شناخته می‌شود.</p>
+
+                <h3 class="text-xl font-bold text-black uppercase mb-4">رهبری شین (Sheen)</h3>
+                <p class="mb-4">به عنوان رهبر <a href="https://sheen.af" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-black underline decoration-accent/30 underline-offset-4 transition-colors font-bold">شین (Sheen)</a>، سلیمان تخصص خود را در جهت توانمندسازی سایر کسب‌وکارها به کار گرفته است. تحت رهبری او، شین به یک آژانس دیجیتال پیشرو تبدیل شده است که به شرکت‌های افغان کمک می‌کند تا با راه‌حل‌های مدرن وب، سئو و اتوماسیون، مسیر خود را در دنیای پیچیده دیجیتال پیدا کنند.</p>
+                
+                <h3 class="text-xl font-bold text-black uppercase mb-4">چشم‌انداز آینده</h3>
+                <p class="mb-4">کار سلیمان با تعهد به کیفیت و نوآوری تعریف می‌شود. او به پتانسیل بخش تکنالوژی افغانستان ایمان دارد و فعالانه برای ارتقای استانداردهای خدمات دیجیتال در منطقه تلاش می‌کند.</p>
+
+                <p>چه در حال کدنویسی پلتفرم بزرگ بعدی باشد و چه در حال استراتژی‌چینی برای رشد شین، سلیمان حکیمی همچنان الهام‌بخش نسل بعدی توسعه‌دهندگان در افغانستان است.</p>
+            </div>
+        `
     }
 ]
