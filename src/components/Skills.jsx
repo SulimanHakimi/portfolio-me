@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const skills = [
     "JavaScript", "React.js", "Next.js", "Node.js", "Express.js",
     "Tailwind", "MongoDB", "React Native", "Google Tools", "WordPress",
-    "Git", "AWS", "SEO", "UI/UX Design"
+    "Git", "AWS", "Angular", "SEO", "UI/UX Design"
 ];
 
 export default function Skills() {
